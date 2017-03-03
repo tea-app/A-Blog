@@ -3,13 +3,10 @@
     投稿削除
 */
 require_once('connectdb.php');
-
 /*
-    投稿削除処理
-    primaryIDで指定
+    記事削除処理
 */
-$primary_id = 2;
-
+$select_id = 2;
 $stmt = $pdo -> prepare("DELETE FROM posts WHERE id = :delete_id");
-$stmt -> bindValue(':delete_id', $primary_id, PDO::PARAM_INT);
+$stmt -> bindValue(':delete_id', $select_id, PDO::PARAM_INT);
 $stmt -> execute();
