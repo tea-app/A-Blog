@@ -1,0 +1,60 @@
+@charset "utf-8";
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100;
+    height: 80px;
+    background-color: aqua;
+}
+
+.content{
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    background-color: #adadad;
+}
+.window{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*
+    window内部
+*/
+.window .set-header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000;
+}
+.window .set-title{
+    font-size: 1.5em;
+}
+
+/*
+    setmenu内部
+*/
+.set-menu{
+    margin: 0 auto;
+    display: table;
+}
+.set-menu a{
+    padding: 5px;
+    display: block;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    float: left;
+    height: 1.5em;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+.null{
+    clear: both;
+}
