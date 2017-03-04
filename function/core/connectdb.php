@@ -2,11 +2,10 @@
 /*
     データベース接続
 */
-require_once('../settings/dbset.php');
+require_once(__DIR__.'/../../settings/dbset.php');
 
-// データベース接続
 try {
     $pdo = new PDO("mysql:host={$dbhost};dbname={$dbname};charset=utf8",$dbuser,$dbpass);
-} catch (PDOExpection $e) {
+} catch (PDOExpextion $e) {
     exit('データベース接続失敗。'.$e->getMessage());
 }
