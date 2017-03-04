@@ -2,26 +2,33 @@
 .main{
     width: 100%;
     height: 100%;
+    min-width: 1000px;
 }
 
 .header{
     width: 100;
     height: 80px;
-    background-color: aqua;
+    color: #4D9BE8;
+    background-color: white;
+    padding: 30px 30px;
+    font-size: 20px;
 }
 
 .content{
     padding: 20px;
     width: 100%;
-    height: 500px;
-    background-color: #adadad;
+    height: 1000px;
+    background-color: #EAEAE0;
 }
 .window{
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: white;
+    max-width: 1000px;
+    border: 1px solid #4D9BE8;
 }
 
 /*
@@ -46,15 +53,70 @@
 .set-menu a{
     padding: 5px;
     display: block;
+/*
     border-top: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
+*/
     float: left;
     height: 1.5em;
     text-decoration: none;
+    color: #4D9BE8;
     margin-right: 100px;
+    
+}
+.set-menu .checked{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    color: black;
 }
 
 .null{
     clear: both;
+}
+
+.general p {
+    font-size: 15px;
+    margin: 30px 100px;
+}
+
+.attention {
+    margin: 20px 120px;
+}
+
+.post-button {
+    text-align: center;
+}
+
+.article li {
+    margin: 20px 200px;
+}
+
+.cate-window {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.add-cate {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.list-cate {
+    border: 2px solid black;
+    padding: 2px 30px;
+    width: 40%;
+    height: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    
+}
+.list-cate li {
+    margin-bottom: 5px;
 }
