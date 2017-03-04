@@ -1,6 +1,6 @@
 <?php
 require_once('../function/core/post-read-num.php');
-$posts = post_read_num(4);
+$posts = post_read_num(5);
 ?>
 
 <!DOCTYPE html>
