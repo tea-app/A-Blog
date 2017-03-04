@@ -7,13 +7,19 @@
 .header{
     width: 100;
     height: 80px;
-    background-color: aqua;
+    padding-left: 30px;
 }
+.header .title{
+    font-size: 2em;
+    line-height: 80px;
+}
+
+
 
 .content{
     padding: 20px;
     width: 100%;
-    height: 500px;
+/*    height: 500px;*/
     background-color: #adadad;
 }
 .window{
@@ -40,21 +46,106 @@
     setmenu内部
 */
 .set-menu{
-    margin: 0 auto;
+    height: 35px;
+/*    width: 100%;*/
     display: table;
+    margin: 0 auto;
 }
 .set-menu a{
-    padding: 5px;
+    text-align: center;
     display: block;
+    width: 180px;
+    float: left;
+    line-height: 35px;
+    text-decoration: none;
     border-top: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
-    float: left;
-    height: 1.5em;
-    text-decoration: none;
-    margin-right: 100px;
 }
 
-.null{
-    clear: both;
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
 }
+
+.main-content .title{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+/*
+    カテゴリテーブル
+*/
+.cate-table{
+    width: 400px;
+    line-height: normal;
+    font-size: 1.2em;
+}
+.cate-table .cate-line{
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid #000;
+    display: table;
+}
+.cate-table .cate-name{
+    float: left;
+}
+.cate-table .delete-btn{
+    color: red;
+    float: right;
+}
+
+/*
+    記事一覧テーブル
+*/
+.posts-table{
+    width: 100%;
+}
+.posts-table .line{
+    padding-left: 15px;
+    display: table;
+    width: 100%;
+    line-height: normal;
+    border: 1px solid #000;
+}
+.line .post-title{
+    float: left;
+    margin-right: 15px;
+}
+.line .author{
+    float: left;
+    margin-right: 15px;
+}
+.line .cate{
+    float: left;
+    margin-right: 15px;
+}
+.line .date{
+    float: left;
+    margin-right: 15px;
+}
+
+
+/*
+    投稿画面
+*/
+.new-post-area{
+    width: 100%;
+}
+.new-post-area .title{
+    font-size: 1em;
+    
+}
+
+
+
+
+
+
+
+
+
+
