@@ -1,0 +1,176 @@
+@charset "utf-8";
+.main{
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+}
+
+.header{
+    width: 100;
+    height: 80px;
+    color: #4D9BE8;
+    background-color: white;
+    padding: 30px 30px;
+    font-size: 20px;
+}
+
+.content{
+    padding: 20px;
+    width: 100%;
+    height: 1000px;
+    background-color: #EAEAE0;
+}
+.window{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 1000px;
+    border: 1px solid #4D9BE8;
+}
+
+/*
+    window内部
+*/
+.window .set-header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000;
+}
+.window .set-title{
+    font-size: 1.5em;
+}
+
+/*
+    setmenu内部
+*/
+.set-menu{
+    margin: 0 auto;
+    display: table;
+}
+.set-menu a{
+    padding: 5px;
+    display: block;
+/*
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+*/
+    float: left;
+    height: 1.5em;
+    text-decoration: none;
+    color: #4D9BE8;
+    margin-right: 100px;
+    
+}
+.set-menu .checked{
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    color: black;
+}
+.null{
+    clear: both;
+}
+
+
+/*
+    ブログ設定内容
+*/
+.general p {
+    font-size: 15px;
+    margin: 30px 100px;
+}
+
+/*
+    記事内容
+*/
+.attention {
+    margin: 20px 120px;
+}
+
+.post-button {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+.list-article div {
+    font-size: 20px;
+    margin: 30px 200px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed black;
+}
+
+.list-article input {
+    float: right;
+    margin: 5px 10px 10px 0;
+}
+
+/*
+    カテゴリ内容
+*/
+.cate-window {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.cate-window p {
+    text-align: center;
+}
+
+.add-cate {
+    text-align: center;
+    margin: 30px 0px;
+}
+/*
+.list-cate {
+    margin: 10px auto;
+    width: 50%;
+    height: 50%;
+}
+.contents-cate {
+    float: left;
+    width: 50%;
+}
+.contents-cate div {
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
+}
+.contents-cate p {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.contents-cate input {
+    float: right;
+}
+*/
+.box-table {
+    margin: 10px auto;
+    width: 100%;
+    background-color: aqua;
+    height: auto;
+}
+.box-line {
+    width: 100%;
+    background-color: red;
+    display: table;
+}
+
+.box-line p {
+/*    float: left;*/
+
+}
+
+.box-left,.box-right {
+    width: 50%;
+    float: left;
+}
+
+.box-left,.box-right p {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
+}
