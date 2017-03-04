@@ -98,9 +98,22 @@
 
 .list-article div {
     font-size: 20px;
-    margin: 30px 200px;
+    margin: 30px 100px;
     padding-bottom: 7px;
     border-bottom: 1px dashed black;
+}
+
+.list-article .date {
+    font-size: 15px;
+    color: #4D9BE8;
+}
+
+.list-article .cate {
+    float: right;
+    font-size: 15px;
+    color: #4D9BE8;
+    text-decoration: none;
+    margin: 7px 15px 0 15px;
 }
 
 .list-article input {
@@ -119,7 +132,6 @@
 .cate-window p {
     text-align: center;
 }
-
 .add-cate {
     text-align: center;
     margin: 30px 0px;
@@ -148,30 +160,42 @@
 }
 */
 .box-table {
-    margin: 10px auto;
-    width: 100%;
-    background-color: aqua;
+    margin: 20px auto;
+    width: 50%;
+/*    background-color: aqua;*/
     height: auto;
 }
 .box-line {
     width: 100%;
-    background-color: red;
+/*    background-color: fuchsia;*/
     display: table;
 }
-
-.box-line p {
-/*    float: left;*/
-
-}
-
-.box-left,.box-right {
+.box-left, .box-right {
     width: 50%;
     float: left;
 }
-
-.box-left,.box-right p {
+.box-left, .box-right {
     display: block;
-    width: 50%;
-    padding: 10px 0;
+    padding: 5px 0;
     border-bottom: 1px dashed black;
+}
+.box-left {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box-right {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box-left .cate {
+    float: left;
+}
+.box-left .btn {
+    float: right;
+}
+.box-right .cate {
+    float: left;
+}
+.box-right .btn {
+    float: right;
 }
