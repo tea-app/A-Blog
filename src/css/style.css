@@ -71,52 +71,107 @@
     border-right: 1px solid #000;
     color: black;
 }
-
 .null{
     clear: both;
 }
 
+
+/*
+    ブログ設定内容
+*/
 .general p {
     font-size: 15px;
     margin: 30px 100px;
 }
 
+/*
+    記事内容
+*/
 .attention {
     margin: 20px 120px;
 }
 
 .post-button {
+    margin: 50px 0px 0px 0px;
     text-align: center;
 }
 
-.article li {
-    margin: 20px 200px;
+.list-article div {
+    font-size: 20px;
+    margin: 30px 200px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed black;
 }
 
+.list-article input {
+    float: right;
+    margin: 5px 10px 10px 0;
+}
+
+/*
+    カテゴリ内容
+*/
 .cate-window {
     position: relative;
     height: 100%;
     width: 100%;
+}
+.cate-window p {
+    text-align: center;
 }
 
 .add-cate {
     text-align: center;
     margin: 30px 0px;
 }
-
+/*
 .list-cate {
-    border: 2px solid black;
-    padding: 2px 30px;
-    width: 40%;
+    margin: 10px auto;
+    width: 50%;
     height: 50%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-    
 }
-.list-cate li {
-    margin-bottom: 5px;
+
+.contents-cate {
+    float: left;
+    width: 50%;
+}
+.contents-cate div {
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
+}
+.contents-cate p {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.contents-cate input {
+    float: right;
+}
+*/
+.box-table {
+    margin: 10px auto;
+    width: 100%;
+    background-color: aqua;
+    height: auto;
+}
+.box-line {
+    width: 100%;
+    background-color: red;
+    display: table;
+}
+
+.box-line p {
+/*    float: left;*/
+
+}
+
+.box-left,.box-right {
+    width: 50%;
+    float: left;
+}
+
+.box-left,.box-right p {
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    border-bottom: 1px dashed black;
 }
