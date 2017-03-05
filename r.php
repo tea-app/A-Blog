@@ -37,11 +37,14 @@ $post['post_time']     =>  投稿時間
             echo '404 Not Found.';
         } else {
             
-            echo $post['post_title'];
+            echo 'ID：'.$post['id'].'<br>';
+            echo '投稿者名：'.$post['post_author'].'<br>';
+            echo 'タイトル：'.$post['post_title'].'<br>';
+            echo '記事本文：'.nl2br($post['post_content']).'<br>';
+            echo 'カテゴリ：'.$post['post_cate'].'<br>';
+            echo '時間：'.$post['post_time'];
             
-        }
-//        var_dump($post);
-        
+        }        
         ?>
     </div>
 </body>
