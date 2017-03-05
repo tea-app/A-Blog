@@ -39,7 +39,6 @@ $posts['post_time']     =>  投稿時間
         foreach($posts as $post) {
             echo $post['post_title'].'<br>';
         }
-//        var_dump($posts);
         
         ?>
     </div>
