@@ -1,9 +1,10 @@
 <?
 /*
-    ブログ情報新規追加
+    ブログ情報新規追加(初期設定用)
 */
-require_once(__DIR__.'/connectdb.php');
+require_once(__DIR__.'/connect.php');
 
+$pdo = connect();
 $blog_name = 'A-Blog';
 $blog_author = 'Admin';
 $stmt = $pdo -> prepare("INSERT INTO blog_info (blog_name, blog_author) VALUES (:blog_name, :blog_author)");

@@ -1,10 +1,10 @@
 <?php
 /*
     新規記事作成
+    1つ作成
 */
-
-
-require_once(__DIR__.'/connectdb.php');
+require_once(__DIR__.'/connect.php');
+$pdo = connect();
 
 $post_author  = $_POST['post_author'];
 $post_title   = $_POST['post_title'];

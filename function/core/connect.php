@@ -1,7 +1,9 @@
 <?php
+/*
+    データベース接続
+*/
 
 function connect() {
-    
     require_once(__DIR__.'/../../settings/dbset.php');
 
     $pdo = null;
@@ -10,6 +12,5 @@ function connect() {
     } catch (PDOExpextion $e) {
         exit('データベース接続失敗。'.$e->getMessage());
     }
-    
     return $pdo;
 }

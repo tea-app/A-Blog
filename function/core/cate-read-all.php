@@ -1,12 +1,8 @@
 <?php
 /*
-    カテゴリ全部酒盗
+    カテゴリ全部取得
 */
-//require(__DIR__.'/connectdb.php');
-
-function get_cate_all($pdo) {
-//    require(__DIR__.'/connect.php');
-        
+function get_cate_all($pdo) {        
     $stmt = $pdo -> prepare("SELECT * FROM categories");
     $stmt -> execute();
     $cates = $stmt -> fetchAll();

@@ -4,7 +4,9 @@
     
     テーブルは１行のみ
 */
-require_once(__DIR__.'/connectdb.php');
+//require_once(__DIR__.'/connectdb.php');
+require_once(__DIR__.'/connect.php');
+$pdo = connect();
 
 $blog_name      = $_POST['blog_name'];
 $blog_author    = $_POST['blog_author'];
@@ -23,4 +25,4 @@ $stmt -> bindParam(':blog_author', $blog_author, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
 
-header('Location: http://localhost:8888/A-Blog/admin');
+header('Location: http://localhost:8888/A-Blog/admin/');
