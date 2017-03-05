@@ -15,7 +15,7 @@ $stmt = $pdo -> prepare("INSERT INTO posts (post_author, post_title, post_conten
 $stmt -> bindValue(':post_author', $post_author, PDO::PARAM_STR);
 $stmt -> bindValue(':post_title', $post_title, PDO::PARAM_STR);
 $stmt -> bindValue(':post_content', $post_content, PDO::PARAM_STR);
-$stmt -> bindValue(':post_cate', $post_cate, PDO::PARAM_INT);
+$stmt -> bindValue(':post_cate', $post_cate, PDO::PARAM_STR);
 $stmt -> execute();
 
 header('Location: http://localhost:8888/A-Blog/admin/posts.php');
