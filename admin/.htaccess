@@ -1,0 +1,8 @@
+AuthUserFile /Applications/MAMP/htdocs/A-Blog/admin/.htpasswd
+AuthGroupFile /dev/null
+AuthName MembersOnly
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>
