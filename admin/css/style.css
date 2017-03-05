@@ -1,114 +1,119 @@
 @charset 'utf-8';
 .main{
-    width: 100%;
-    height: auto;
-    background-color: #EAEAE0;
+    min-width           : 1300px;
+    width               : 100%;
+    height              : auto;
+    background-color    : #EAEAE0;
 }
 .header{
-    width: 100%;
-    height: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #fff;
+    width               : 100%;
+    height              : 80px;
+    padding-left        : 30px;
+    padding-right       : 30px;
+    background-color    : #fff;
 }
 .header .title{
-    float: left;
-    line-height: 80px;
-    font-size: 1.7em;
-    color: #4D9BE8;
+    float               : left;
+    line-height         : 80px;
+    font-size           : 1.7em;
+    color               : #4D9BE8;
 }
 .header .blog-link{
-    float: right;
-    line-height: 80px;
-    color: navy;
+    float               : right;
+    line-height         : 80px;
+    color               : navy;
+}
+.header .blog-link a{
+    text-decoration     : none;
+    color               : #4D9BE8;
 }
 
 /*
     コンテンツ部分
 */
 .content{
-    width: 100%;
-    padding: 20px 15px 15px 15px;
+    width               : 100%;
+    padding             : 20px 15px 15px 15px;
 }
 .content .main-content{
-    width: 70%;
-    margin: 0 auto;
-    border: 1px solid #4D9BE8;
-    border-radius: 5px;
-    background-color: #fff;
+    width               : 70%;
+    margin              : 0 auto;
+    border              : 1px solid #4D9BE8;
+    border-radius       : 5px;
+    background-color    : #fff;
 }
 
 /*
     コンテンツ部分
 */
 .main-content{
-    padding: 10px;
+    padding             : 10px;
 }
 .main-content .set-menu{
-    width: 100%;
-    line-height: normal;
-    border-bottom: 1px solid #000;
+    width               : 100%;
+    line-height         : normal;
+    border-bottom       : 1px solid #000;
 }
 .set-menu{
 }
 .set-menu .title{
-    font-size: 1.5em;
+    font-size           : 1.5em;
 }
 .set-menu .menu-li{
-    margin: 0 auto;
-    width: auto;
-    display: table;
+    margin              : 0 auto;
+    width               : auto;
+    display             : table;
 }
 .menu-li a{
-    display: block;
-    margin-right: 100px;
-    font-size: 1.2em;
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    color: #4D9BE8;
+    display             : block;
+    margin-right        : 100px;
+    font-size           : 1.2em;
+    float               : left;
+    padding-left        : 10px;
+    padding-right       : 10px;
+    text-decoration     : none;
+    color               : #4D9BE8;
 }
 .menu-li .checked{
-    color: #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-top: 1px solid #000;
+    color               : #000;
+    border-left         : 1px solid #000;
+    border-right        : 1px solid #000;
+    border-top          : 1px solid #000;
 }
 
 
 .naiyou{
-    width: 85%;
-    height: auto;
-    padding: 10px;
-    margin: 0 auto;
+    width               : 85%;
+    height              : auto;
+    padding             : 10px;
+    margin              : 0 auto;
 }
 
 /*
     記事一覧用
 */
 .naiyou p{
-    color: #000;
+    color               : #000;
 }
 .naiyou .post-btn{
-    margin-bottom: 15px;
+    margin-bottom       : 15px;
 }
 .post-btn a{
-    margin: 0 auto;
-    text-decoration: none;
-    border: 1px solid #adadad;
-    border-radius: 5px;
-    line-height: 2em;
-    color: navy;
+    margin              : 0 auto;
+    text-decoration     : none;
+    border              : 1px solid #adadad;
+    border-radius       : 5px;
+    line-height         : 2em;
+    color               : navy;
 }
 .post-btn a:hover{
-    background-color: #3C7FE8;
+    background-color    : #3C7FE8;
 }
 .naiyou a{
-    width: 100px;
-    margin-top: 25px;
-    display: block;
-    text-align: center;
+    width               : 100px;
+    margin-top          : 25px;
+    display             : block;
+    text-align          : center;
 }
 
 
@@ -116,32 +121,32 @@
     記事一覧テーブル
 */
 .posts-table{
-    width: 100%;
-    display: table;
+    width               : 100%;
+    display             : table;
 }
 .posts-table .post-line{
-    margin-bottom: 10px;
-    display: table;
-    width: 100%;
-    line-height: 2em;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: 1px dashed #000;
+    margin-bottom       : 10px;
+    display             : table;
+    width               : 100%;
+    line-height         : 2em;
+    padding-left        : 20px;
+    padding-right       : 20px;
+    border-bottom       : 1px dashed #000;
     
 }
 .post-line .li{
 }
 .post-line .left{
-    float: left;
-    margin-right: 15px;
+    float               : left;
+    margin-right        : 15px;
 }
 .post-line .right{
-    margin-right: 15px;
-    float: right;
-    height: 100%;
+    margin-right        : 15px;
+    float               : right;
+    height              : 100%;
 }
 .post-edit{
-    text-decoration: none;
+    text-decoration     : none;
 }
 
 
@@ -149,15 +154,15 @@
     カテゴリ管理
 */
 .add-cate{
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    line-height: normal;
+    text-align          : center;
+    margin              : 0 auto;
+    margin-bottom       : 15px;
+    line-height         : normal;
 }
 .naiyou p{
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 15px;
+    text-align          : center;
+    line-height         : normal;
+    margin-bottom       : 15px;
 }
 
 
@@ -165,39 +170,39 @@
     カテゴリテーブル
 */
 .cate-table{
-    width: 75%;
-    height: auto;
-    display: table;
-    margin: 0 auto;
+    width               : 75%;
+    height              : auto;
+    display             : table;
+    margin              : 0 auto;
 }
 
 .cate-table .cate{
-    line-height: 2em;
-    font-size: 1.2em;
-    padding-left: 10px;
-    padding-right: 20px;
+    line-height         : 2em;
+    font-size           : 1.2em;
+    padding-left        : 10px;
+    padding-right       : 20px;
     
-    display: table;
-    width: 50%;
-    float: left;
+    display             : table;
+    width               : 50%;
+    float               : left;
     
-    border-bottom: 1px dashed #000;
+    border-bottom       : 1px dashed #000;
 }
 
 .cate .title{
-    float: left;
+    float               : left;
 }
 .cate input{
-    display: block;
-    float: right;
+    display             : block;
+    float               : right;
 }
 
 .delete-btn{
-    color: red;
-    width: 70px;
-    font-size: 1em;
-    background-color: #fff;
-    border: 1px solid #adadad;
+    color               : red;
+    width               : 70px;
+    font-size           : 1em;
+    background-color    : #fff;
+    border              : 1px solid #adadad;
     box-shadow          : -1px 1px 1px 1px #dadada;
 }
 
@@ -207,106 +212,106 @@
 */
 
 add-post .post-btn{
-    margin-top: 20px;
-    color: navy;
-    width: 70px;
-    font-size: 1em;
-    background-color: #fff;
-    border: 1px solid #adadad;
+    margin-top          : 20px;
+    color               : navy;
+    width               : 70px;
+    font-size           : 1em;
+    background-color    : #fff;
+    border              : 1px solid #adadad;
     box-shadow          : -1px 1px 1px 1px #dadada;
 }
 
 
 .add-post .title{
-    border-left: 5px solid navy;
-    padding-left: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 1.2em;
-    line-height: normal;
+    border-left         : 5px solid navy;
+    padding-left        : 5px;
+    margin-bottom       : 10px;
+    width               : 100%;
+    font-size           : 1.2em;
+    line-height         : normal;
 }
 .add-post .post-title{
-    line-height: 2em;
-    width: 100%;
-    display: table;
+    line-height         : 2em;
+    width               : 100%;
+    display             : table;
 }
 .post-title .name{
-    float: left;
+    float               : left;
 }
 .post-title .input{
-    float: left;
+    float               : left;
 }
 /* 記事本文 */
 .post-content .name{
-    line-height: 2em;
-    margin-top: 5px;
+    line-height         : 2em;
+    margin-top          : 5px;
 }
 .post-content textarea{
-    width: 60%;
-    height: 150px;
+    width               : 60%;
+    height              : 150px;
 }
 /* 投稿者名 */
 .post-author{
-    margin-top: 10px;
-    line-height: 2em;
-    width: 100%;
-    display: table;
+    margin-top          : 10px;
+    line-height         : 2em;
+    width               : 100%;
+    display             : table;
 }
 .post-author .name{
-    float: left;
+    float               : left;
 }
 .post-author .input{
-    float: left;
+    float               : left;
 }
 /* カテゴリー */
 .post-cate{
-    margin-top: 10px;
-    line-height: 2em;
-    width: 100%;
-    display: table;
+    margin-top          : 10px;
+    line-height         : 2em;
+    width               : 100%;
+    display             : table;
 }
 .post-cate .name{
-    float: left;
+    float               : left;
 }
 .psot-cate .input{
-    float: left;
+    float               : left;
 }
 .post-line a{
-    display: inline;
-    width: 2em;
+    display             : inline;
+    width               : 2em;
 }
 
 /*
     ブログ情報
 */
 .blog-info .title{
-    line-height: normal;
-    font-size: 1.2em;
-    border-left: 5px solid navy;
-    padding-left: 5px;
-    margin-bottom: 10px;
+    line-height         : normal;
+    font-size           : 1.2em;
+    border-left         : 5px solid navy;
+    padding-left        : 5px;
+    margin-bottom       : 10px;
 }
 .blog-title{
-    display: table;
-    line-height: normal;
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    display             : table;
+    line-height         : normal;
+    font-size           : 1.1em;
+    margin-bottom       : 10px;
 }
 .blog-title .name{
-    float: left;
+    float               : left;
 }
 .blog-title .input{
-    float: left;
+    float               : left;
 }
 /* 管理者名 */
 .blog-author{
-    display: table;
-    line-height: normal;
-    font-size: 1.1em;
+    display             : table;
+    line-height         : normal;
+    font-size           : 1.1em;
 }
 .blog-author .name{
-    float: left;
+    float               : left;
 }
 .blog-author .input{
-    float: left;
+    float               : left;
 }

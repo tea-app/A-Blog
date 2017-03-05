@@ -10,7 +10,6 @@ $cates = get_cate_all($pdo);
 <head>
 <meta charset="UTF-8">
 <title>管理</title>
-
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +18,7 @@ $cates = get_cate_all($pdo);
     <div class="main">
         <div class="header">
             <div class="title">A-Blog</div>
-            <div class="blog-link">ブログの確認</div>
+            <div class="blog-link"><a href="../">ブログの確認</a></div>
         </div>
         <div class="content">
             <div class="main-content">
@@ -60,7 +59,6 @@ $cates = get_cate_all($pdo);
                                         }
                                         ?>
                                     </select>
-<!--                                    <input type="text" name="post_cate">-->
                                 </div>
                             </div>
                             <input type="submit" value="投稿" class="post-btn">
@@ -69,9 +67,7 @@ $cates = get_cate_all($pdo);
                     
                 </div>
             </div>
-
         </div>
     </div>
-    
 </body>
 </html>

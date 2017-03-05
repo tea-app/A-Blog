@@ -1,23 +1,22 @@
 <?php
+    require_once('../function/core/connect.php');
+    $pdo = connect();
     require_once('../function/core/blog-info-read.php');
-    $info = read_blog_info();
+    $info = read_blog_info($pdo);
 ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>管理</title>
-
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <div class="main">
         <div class="header">
             <div class="title">A-Blog</div>
-            <div class="blog-link">ブログの確認</div>
+            <div class="blog-link"><a href="../">ブログの確認</a></div>
         </div>
         <div class="content">
             <div class="main-content">

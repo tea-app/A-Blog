@@ -1,16 +1,12 @@
 <?php
 $id = $_GET['id'];
-
 require_once('../function/core/connect.php');
-
-require_once('../function/core/post-read.php');
-
-require_once('../function/core/cate-read-all.php');
-
 $pdo  = connect();
 
+require_once('../function/core/post-read.php');
 $post = readPost($pdo, $id);
 
+require_once('../function/core/cate-read-all.php');
 $cates = get_cate_all($pdo);
 ?>
 <!DOCTYPE html>
@@ -18,16 +14,14 @@ $cates = get_cate_all($pdo);
 <head>
 <meta charset="UTF-8">
 <title>管理</title>
-
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <div class="main">
         <div class="header">
             <div class="title">A-Blog</div>
-            <div class="blog-link">ブログの確認</div>
+            <div class="blog-link"><a href="../">ブログの確認</a></div>
         </div>
         <div class="content">
             <div class="main-content">
@@ -75,12 +69,9 @@ $cates = get_cate_all($pdo);
                             <input type="submit">
                         </form>
                     </div>
-                    
                 </div>
             </div>
-
         </div>
     </div>
-    
 </body>
 </html>
