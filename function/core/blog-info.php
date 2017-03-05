@@ -23,4 +23,4 @@ $stmt -> bindParam(':blog_author', $blog_author, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
 
-header('Location: http://localhost:8888/A-Blog/src/info.php');
+header('Location: http://localhost:8888/A-Blog/admin');

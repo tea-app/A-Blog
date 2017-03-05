@@ -44,4 +44,4 @@ $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
 $stmt = null;
 
-header('Location: http://localhost:8888/A-Blog/src/posts.php');
+header('Location: http://localhost:8888/A-Blog/admin/posts.php');

@@ -18,4 +18,4 @@ $stmt -> bindValue(':post_content', $post_content, PDO::PARAM_STR);
 $stmt -> bindValue(':post_cate', $post_cate, PDO::PARAM_INT);
 $stmt -> execute();
 
-header('Location: http://localhost:8888/A-Blog/src/posts.php');
+header('Location: http://localhost:8888/A-Blog/admin/posts.php');
