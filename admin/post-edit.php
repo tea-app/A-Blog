@@ -1,7 +1,17 @@
 <?php
 $id = $_GET['id'];
+
+require_once('../function/core/connect.php');
+
 require_once('../function/core/post-read.php');
-$post = readPost($id);
+
+require_once('../function/core/cate-read-all.php');
+
+$pdo  = connect();
+
+$post = readPost($pdo, $id);
+
+$cates = get_cate_all($pdo);
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -48,9 +58,19 @@ $post = readPost($id);
                                 <div class="name">投稿者名：</div>
                                 <div class="input" name="post_author"><input type="text" name="post_author" value="<?php echo $post['post_author'] ?>"></div>
                             </div>
+                            
                             <div class="post-cate">
-                                <div class="name">カテゴリー(数値)：</div>
-                                <div class="input"><input type="text" name="post_cate" value="<?php echo $post['post_cate'] ?>"></div>
+                                <div class="name">カテゴリー：</div>
+                                <div class="input">
+                                    <select name="post_cate">
+                                        <?php
+                                        foreach ($cates as $cate) {
+                                            echo '<option value="'.$cate['name'].'">'.$cate['name'].'</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                    <font color="red">※カテゴリは反映されていません</font>
+                                </div>
                             </div>
                             <input type="submit">
                         </form>

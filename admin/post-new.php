@@ -1,3 +1,10 @@
+<?php
+require_once('../function/core/connect.php');
+$pdo = connect();
+
+require_once('../function/core/cate-read-all.php');
+$cates = get_cate_all($pdo);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -44,10 +51,19 @@
                                 <div class="input" name="post_author"><input type="text" name="post_author"></div>
                             </div>
                             <div class="post-cate">
-                                <div class="name">カテゴリー(数値)：</div>
-                                <div class="input"><input type="text" name="post_cate"></div>
+                                <div class="name">カテゴリー：</div>
+                                <div class="input">
+                                    <select name="post_cate">
+                                        <?php
+                                        foreach ($cates as $cate) {
+                                            echo '<option value="'.$cate['name'].'">'.$cate['name'].'</option>';
+                                        }
+                                        ?>
+                                    </select>
+<!--                                    <input type="text" name="post_cate">-->
+                                </div>
                             </div>
-                            <input type="submit">
+                            <input type="submit" value="投稿" class="post-btn">
                         </form>
                     </div>
                     

@@ -1,6 +1,9 @@
 <?php
+require_once('../function/core/connect.php');
+$pdo = connect();
+
 require_once('../function/core/cate-read-all.php');
-$cates = get_cate_all();
+$cates = get_cate_all($pdo);
 ?>
 <!DOCTYPE html>
 <html lang="ja">
