@@ -1,27 +1,44 @@
+<?php
+require_once('function/core/connect.php');
+$pdo = connect();
+
+require_once('function/core/blog-info-read.php');
+$info = read_blog_info($pdo);
+
+require_once('function/core/post-read-all.php');
+$posts = read_post_all($pdo);
+?>
+
+<!--
+//  ブログ情報
+$info['blog_name']      =>  ブログタイトル
+$info['blog_author']    =>  ブログ管理者
+
+//  記事情報
+$posts['id']            =>  記事ID
+$posts['post_author']   =>  記事投稿者
+$posts['post_title']    =>  記事タイトル
+$posts['post_content']  =>  記事本文
+$posts['post_cate']     =>  記事カテゴリ
+$posts['post_time']     =>  投稿時間
+-->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>フォーム試験</title>
-<?php require_once('function/core/post-add.php'); ?>
+<title><?php echo $info['blog_name']; ?></title>
 </head>
 <body>
     <div class="main">
-        <form action="<?php addPost(); ?>" method="post">
-            <br>
-            <input type="text" name="post_author">
-            <br>
-            <input type="text" name="post_title">
-            <br>
-            <textarea name="post_content"></textarea>
-            <br>
-            <input type="text" name="post_cate">
-            <br>
-            
-            <input type="submit">
-        </form>
+        <?php
+        
+        foreach($posts as $post) {
+            echo $post['post_title'].'<br>';
+        }
+//        var_dump($posts);
+        
+        ?>
     </div>
-
-    
 </body>
 </html>
