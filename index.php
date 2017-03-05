@@ -5,8 +5,11 @@ $pdo = connect();
 require_once('function/core/blog-info-read.php');
 $info = read_blog_info($pdo);
 
-require_once('function/core/post-read-all.php');
-$posts = read_post_all($pdo);
+require_once('function/core/post-read-num.php');
+$posts = post_read_num(5,$pdo);
+
+//require_once('function/core/post-read-all.php');
+//$posts2 = read_post_all($pdo);
 ?>
 
 <!--
