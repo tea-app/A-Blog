@@ -4,6 +4,9 @@
 */
 require_once(__DIR__.'/connect.php');
 $pdo = connect();
+
+
+
 $id = $_POST['id'];
 // 更新内容
 $post_author = $_POST['post_author'];
@@ -16,6 +19,7 @@ $stmt = $pdo -> prepare("UPDATE posts SET post_author = :post_author WHERE id = 
 $stmt -> bindParam(':post_author', $post_author, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
+
 $stmt = null;
 
 // 記事名更新
@@ -23,6 +27,7 @@ $stmt = $pdo -> prepare("UPDATE posts SET post_title = :post_title WHERE id = :i
 $stmt -> bindParam(':post_title', $post_title, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
+
 $stmt = null;
 
 // 記事コンテンツ更新
@@ -30,6 +35,7 @@ $stmt = $pdo -> prepare("UPDATE posts SET post_content = :post_content WHERE id 
 $stmt -> bindParam(':post_content', $post_content, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
+
 $stmt = null;
 
 // 記事カテゴリ更新
@@ -37,6 +43,7 @@ $stmt = $pdo -> prepare("UPDATE posts SET post_cate = :post_cate WHERE id = :id"
 $stmt -> bindParam(':post_cate', $post_cate, PDO::PARAM_STR);
 $stmt -> bindParam(':id', $id, PDO::PARAM_INT);
 $stmt -> execute();
+
 $stmt = null;
 
 header('Location: http://localhost:8888/A-Blog/admin/posts.php');

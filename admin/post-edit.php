@@ -2,10 +2,8 @@
 $id = $_GET['id'];
 require_once('../function/core/connect.php');
 $pdo  = connect();
-
 require_once('../function/core/post-read.php');
 $post = readPost($pdo, $id);
-
 require_once('../function/core/cate-read-all.php');
 $cates = get_cate_all($pdo);
 ?>
@@ -40,6 +38,8 @@ $cates = get_cate_all($pdo);
                     <div class="add-post">
                         <div class="title">記事編集</div>
                         <form action="../function/core/post-update.php" method="post">
+                            <input type="hidden" value="<?php echo $id ?>" name="id">
+                            
                             <div class="post-title">
                                 <div class="name">記事タイトル：</div>
                                 <div class="input"><input type="text" name="post_title" value="<?php echo $post['post_title']; ?>"></div>
